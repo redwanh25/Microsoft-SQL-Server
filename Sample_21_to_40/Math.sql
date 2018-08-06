@@ -1,0 +1,27 @@
+use [Sample_21_to_40]
+go
+
+print Ceiling(89.8)
+print floor(89.8)
+print power(3, 3)
+print sqrt(9)
+print square(9)
+print abs(-56)
+print Round(45.6, 0)
+print Round(45.578, 0)
+print Round(45.6789856, 1)
+print Round(45.6389856, 1)
+print Round(45.6389856, 2)
+print Round(45.6389856, 3)
+print Round(45.6389856, 4)
+print Round(45.6389856, 2, 1)	-- 3rd parameter hosse truncate kore dibe. 2 er por theke baki shob value gulo k 0 kore dibe.
+print Round(45.6389856, 2, 2)
+print Round(45.6389856, 4, 3)
+print Round(453.6389856, -2)
+print Round(453.6389856, -3)
+print Round(463.6389856, -0)
+print Round(437.6389856, -0)
+print Round(453.6389856, -1)
+print Round(457.6389856, -1)
+print Round(463.6389856, -2)
+print Round(433.6389856, -2)
