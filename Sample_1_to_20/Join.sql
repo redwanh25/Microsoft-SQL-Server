@@ -29,9 +29,13 @@ insert into tblEmployee values ('Valarie', 'female', 5500, 1)
 
 -- Inner join
 
-Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee
+Select tblDepartment.ID, [Name], [Gender], [Salary], [DepartmentName] from tblEmployee		-- shudhu id dile hobe na. cs, dui table ai ID ase. tai she confuse hoye jabe. ai jonno amader table er nam diye specific vabe bole dite hobe j amra kon id k chassi.
 Inner join tblDepartment
 ON tblEmployee.DepartmentID = tblDepartment.Id		-- same as tblDepartment.Id = tblEmployee.DepartmentID
+
+Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee E
+Inner join tblDepartment D
+ON E.DepartmentID = D.Id
 
 Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee
 join tblDepartment									-- inner join / join same kotha
@@ -41,6 +45,10 @@ ON tblDepartment.Id = tblEmployee.DepartmentID		-- aitao hobe. but, no need
 
 Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee
 left outer join tblDepartment						--  left outer join / left join   -- right outer join / right join				
+ON tblEmployee.DepartmentID = tblDepartment.Id
+
+Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee
+right outer join tblDepartment						--  left outer join / left join   -- right outer join / right join				
 ON tblEmployee.DepartmentID = tblDepartment.Id
 
 Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee

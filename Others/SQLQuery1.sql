@@ -2,7 +2,7 @@
 Alter Table tblPerson add constraint tblPerson_GenderID_FK
 Foreign Key (GenderID) references tblGender(ID)
 
-Use [Sample]
+Use [Sample_1_to_20]
 Go
 Select * from tblPerson
 Select * from tblGender
@@ -79,6 +79,10 @@ ID int Identity(1000, 1) Primary key,
 Name nvarchar(50)
 )
 
+declare @id int
+select @id = id from tblRedwan
+print @id
+
 select * from tblRedwan
 select * from tblBiva
 select * from tblPerson
@@ -92,7 +96,11 @@ insert into tblBiva values ('tumake')
 insert into tblBiva values ('valobashi')
 insert into tblBiva values ('na')
 
+delete from tblRedwan where id = 1010
 
+
+-- jokhon ami "tblRedwan" table a insert korbo tokhon e ai "trigger" ta kaj korbe. otherwise korbe na. cs, ai trigger ta "Insert" er jonno kora.
+-- suppose ami kono kisu "delete" korsi "tblRedwan" table theke taile korbe na.
 
 Create Trigger tblTrigger on tblRedwan for Insert
 as

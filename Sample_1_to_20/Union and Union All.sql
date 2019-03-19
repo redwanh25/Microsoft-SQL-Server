@@ -30,7 +30,7 @@ select * from tblIndianCustomers
 select * from tblUKCustomers
 
 select * from tblIndianCustomers
-union
+union								--sorted thake
 select * from tblUKCustomers
 
 -- for union output will be
@@ -47,7 +47,7 @@ select * from tblUKCustomers
 2	Sam	S@S.com			|
 
 select * from tblIndianCustomers
-union all
+union all											-- sorted thake na
 select* from tblUKCustomers
 
 select id, name, email from tblIndianCustomers		 

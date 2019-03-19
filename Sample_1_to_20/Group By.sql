@@ -29,6 +29,10 @@ select sum(salary) from tblPerson
 select min(salary) from tblPerson
 select max(salary) from tblPerson
 
+select * from tblPerson
+
+-- select a joto gula colomn thakbe group by a thik toto gulo colomn er name dite hobe. for example: [name], [genderId] ai dui ta colomn
+
 select [name], genderId, sum(salary) as [Total Salary], count(id) as [Total employee]	-- space jodi dite chai taile amader [] er moddhe use korte hobe
 from tblPerson
 group by [name], genderid

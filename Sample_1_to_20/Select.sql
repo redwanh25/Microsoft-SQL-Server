@@ -1,3 +1,5 @@
+select * from INFORMATION_SCHEMA.ROUTINES
+
 select * from tblPerson
 select [id], [Name] from [sample_1_to_20].[dbo].[tblPerson]
 select Distinct [name] from tblPerson
@@ -20,5 +22,5 @@ select * from tblPerson order by [Name]					-- ascending
 select * from tblPerson order by [Name] desc			-- descending
 select * from tblPerson order by [Name] desc, [GenderId] asc
 select top 5 * from tblPerson
-select top 5 [name], [Email] from tblPerson
+select top 3 [name], [Email] from tblPerson
 select top 70 percent * from tblPerson

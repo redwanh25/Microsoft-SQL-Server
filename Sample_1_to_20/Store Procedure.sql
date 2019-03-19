@@ -71,6 +71,8 @@ begin
 	select @name = [Name] from tblEmployee where ID = @id
 end
 
+select * from tblEmployee
+
 Declare @text nvarchar(50)
 execute tblEmployee_outputParameter 3, @text out		-- out / output dui tar jekono akta likhle e hobe
 print @text
@@ -82,11 +84,11 @@ print @text
 Declare @text nvarchar(50)
 execute tblEmployee_outputParameter 1, @text		-- out na likhle null ashle.. mane kisu e ashbe na.
 if(@text is null)
-begin				-- amra jemon multiple line er kisu likhle { } er moddhe likhi. sql a begin theke end er moddhe likhte hobe.
-	print 'null'
-	print 'print'
-	print 'hobe'
-end
+	begin				-- amra jemon multiple line er kisu likhle { } er moddhe likhi. sql a begin theke end er moddhe likhte hoy.
+		print 'null'
+		print 'print'
+		print 'hobe'
+	end
 else 
 	print @text
 

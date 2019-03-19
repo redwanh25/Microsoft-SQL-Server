@@ -65,4 +65,4 @@ select Replace (email, '.com', '.net') as Email from tblPerson
 select stuff(email, 2, 3, '**') as Email from tblPerson
 select stuff(email, 2, 3, replicate('*', 2)) as Email from tblPerson
 
-select [Name], stuff([Email], 2, Patindex('%@%', email)-2, replicate('*', patindex('%@%', email)-1)), [GenderID], [Salary] from tblPerson
+select [Name], stuff([Email], 2, Patindex('%@%', email)-2, replicate('*', patindex('%@%', email)-2)), [GenderID], [Salary] from tblPerson
