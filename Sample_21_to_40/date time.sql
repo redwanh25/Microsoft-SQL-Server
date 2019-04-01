@@ -88,6 +88,8 @@ select DateAdd(month, 2, '2018/05/30')		-- 2018-07-02 00:00:00.000
 select DateAdd(day, 10, '12/30/2018')		-- 2019-01-09 00:00:00.000
 select dateAdd(year, -5, '12/30/2018')
 select dateAdd(month, -1, '01/31/2018')
+select DATEADD(MINUTE, 1, getDate())
+select getDate() as [dateTime]
 
 select dateDiff(year, '12/30/2018', getDate())
 select dateDiff(year, '03/30/2018', getDate())
