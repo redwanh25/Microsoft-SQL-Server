@@ -24,3 +24,6 @@ select * from tblPerson order by [Name] desc, [GenderId] asc
 select top 5 * from tblPerson
 select top 3 [name], [Email] from tblPerson
 select top 70 percent * from tblPerson
+
+select * from tblPerson
+select distinct [Name] from tblPerson

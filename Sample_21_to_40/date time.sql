@@ -30,6 +30,7 @@ select sysDateTimeOffSet() as [sysDateTimeOffSet]
 select GETUTCDATE() as [getUTCDate]
 select sysUTCDateTime() as [sysUTCDateTime]
 
+
 select isdate(getDate())					-- return 1
 select isdate('redwan')						-- return 0
 select isdate('12/03/2018 21:12:39')		-- return 1
@@ -214,3 +215,12 @@ select * from tblDateTime
 
 select convert(nvarchar, getDate(), 113)
 select convert(nvarchar, getDate(), 103)
+
+print GetDate()
+print CURRENT_TIMESTAMP
+print SYSDATETIME()
+print sysDateTimeOffSet()
+print GETUTCDATE()
+print sysUTCDateTime()
+
+print DATEADD(hour, +6, GETUTCDATE())   -- local time

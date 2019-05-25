@@ -28,8 +28,7 @@ where id = 3
 select sum(salary) from tblPerson
 select min(salary) from tblPerson
 select max(salary) from tblPerson
-
-select * from tblPerson
+select avg(salary) from tblPerson
 
 -- select a joto gula colomn thakbe group by a thik toto gulo colomn er name dite hobe. for example: [name], [genderId] ai dui ta colomn
 
@@ -59,3 +58,4 @@ order by [name]
 select [name], sum(salary) as [total salary]
 from tblPerson
 group by [name], genderId
+
