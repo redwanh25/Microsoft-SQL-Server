@@ -25,6 +25,7 @@ update tblPerson
 set salary = 3010
 where id = 3
 
+select * from tblPerson
 select sum(salary) from tblPerson
 select min(salary) from tblPerson
 select max(salary) from tblPerson

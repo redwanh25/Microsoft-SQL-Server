@@ -1,5 +1,5 @@
 
-use [Sample_21_to_40]
+use [Sample_1_to_20]
 go
 
 -- view just query gulo kore save kore rakhe.. er beshi view r kono kaj kore na.

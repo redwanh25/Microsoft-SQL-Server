@@ -91,6 +91,7 @@ select dateAdd(year, -5, '12/30/2018')
 select dateAdd(month, -1, '01/31/2018')
 select DATEADD(MINUTE, 1, getDate())
 select getDate() as [dateTime]
+select DATEADD(HOUR, 6, GETUTCDATE())
 
 select dateDiff(year, '12/30/2018', getDate())
 select dateDiff(year, '03/30/2018', getDate())
@@ -224,3 +225,5 @@ print GETUTCDATE()
 print sysUTCDateTime()
 
 print DATEADD(hour, +6, GETUTCDATE())   -- local time
+
+SELECT CONVERT(varchar(15),  CAST(GETDATE() AS TIME), 100) as AmPmTime

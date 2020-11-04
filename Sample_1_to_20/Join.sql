@@ -65,12 +65,12 @@ Cross join tblDepartment
 Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee
 Left join tblDepartment
 on tblEmployee.DepartmentID = tblDepartment.Id
-where tblEmployee.DepartmentID is NULL
+where tblDepartment.Id is NULL		--B.key
 
 Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee
 Right join tblDepartment
 on tblEmployee.DepartmentID = tblDepartment.Id
-where tblEmployee.DepartmentID is NULL
+where tblEmployee.DepartmentID is NULL	--A.key
 
 Select [Name], [Gender], [Salary], [DepartmentName] from tblEmployee
 Full outer join tblDepartment
